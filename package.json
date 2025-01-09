@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "@sanity/vision": "^3.69.0",
+    "fetch": "^1.1.0",
+    "node": "^22.13.0",
     "node-fetch": "^3.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

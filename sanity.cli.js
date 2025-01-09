@@ -1,12 +1,9 @@
-import { defineCliConfig } from 'sanity/cli';
-export default defineCliConfig({
-    api: {
-        projectId: '1kifk5u3',
-        dataset: 'production'
-    },
-    /**
-     * Enable auto-updates for studios.
-     * Learn more at https://www.sanity.io/docs/cli#auto-updates
-     */
-    autoUpdates: true,
+// sanityClient.ts
+import { createClient } from '@sanity/client';
+export const client = createClient({
+    projectId: '1kifk5u3', // Replace with your project ID
+    dataset: 'production', // Or your dataset name
+    apiVersion: '2024-01-04', // Today's date or latest API version
+    useCdn: false, // Disable CDN for real-time updates
+    token: process.env.token,
 });
